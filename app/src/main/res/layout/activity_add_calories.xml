@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCaloriesActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="341dp"
+        android:layout_height="454dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/tomateBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonTomate_Pulsado"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@mipmap/tomate" />
+
+        <ImageButton
+            android:id="@+id/cucumberBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonCucumber_Pulsado"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@mipmap/cucumber" />
+
+        <ImageButton
+            android:id="@+id/pimiento_verdeBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonPimiento_verde_Pulsado"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@mipmap/pimiento_verde" />
+
+        <ImageButton
+            android:id="@+id/pimiento_rojoBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonPimiento_rojo_Pulsado"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@mipmap/pimiento_rojo" />
+
+        <ImageButton
+            android:id="@+id/cebollaBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonCebolla_Pulsado"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@mipmap/cebolla" />
+
+        <ImageButton
+            android:id="@+id/berenjenaBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonBerenjena_Pulsado"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@mipmap/berenjena" />
+
+        <ImageButton
+            android:id="@+id/bananaBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonBanana_Pulsado"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@mipmap/banana" />
+
+        <ImageButton
+            android:id="@+id/aceite_olivaBtn"
+            android:layout_width="79dp"
+            android:layout_height="96dp"
+            android:onClick="botonAceite_oliva_Pulsado"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@mipmap/aceite_oliva" />
+
+        <ImageButton
+            android:id="@+id/couscousBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonCouscous_Pulsado"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@mipmap/couscous" />
+
+        <ImageButton
+            android:id="@+id/garbanzoBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonGarbanzo_Pulsado"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@mipmap/garbanzo" />
+
+        <ImageButton
+            android:id="@+id/zanahoriaBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonZanaoria_Pulsado"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:srcCompat="@mipmap/zanahoria" />
+
+        <ImageButton
+            android:id="@+id/calabacinBtn"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:onClick="botonCalabacin_Pulsado"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@mipmap/calabacin" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calorias "
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/caloriasTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <EditText
+        android:id="@+id/caloriasTextView"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="result"
+        android:inputType="textPersonName"
+        android:textColor="#C32424"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

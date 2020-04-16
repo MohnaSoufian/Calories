@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calories</string>
+    <string name="login">login</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login_label">login_label</string>
+</resources>

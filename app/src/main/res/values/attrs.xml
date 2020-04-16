@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MiBoton">
+        <attr name="android:text"/>
+        <attr name="android:onClick"/>
+        <attr name="fila" format="integer"/>
+        <attr name="columna" format="integer" />
+    </declare-styleable>
+</resources>
